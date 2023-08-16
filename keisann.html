@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="keisann.css">
+    
+ </head>   
+ <body>
+   <h1>こんにちは計算サイトです</h1>
+ </body>
+ <form oninput="op1.value = Number(a.value) + Number(b.value);">
+
+  <input type="number" name="a" id="a" value="0" size="5"> 
+
+  +
+
+  <input type="number" name="b" id="b" value="0" size="5"> 
+  =<output name="op1" for="a b">0</output>
+  </form>
+
+
+  <form oninput="op2.value = Number(c.value) - Number(d.value);">
+
+
+   <input type="number" name="c" id="c" value="0" size="5"> 
+
+   -
+
+   <input type="number" name="d" id="d" value="0" size="5"> 
+  =<output name="op2" for="a b">0</output>
+</form>  
+
+
+<form oninput="op3.value = Number(e.value) * Number (f.value);">
+  <input type="number" name="e" id="e" value="0" size="5"> 
+ 
+  ✕
+
+  <input type="number" name="f" id="f" value="0" size="5"> 
+  =<output name="op3" for="e f">0</output>
+</form>
+
+
+<form oninput="op4.value = Number(g.value) / Number (h.value);">
+  <input type="number" name="g" id="g" value="0" size="5"> 
+
+÷
+  <input type="number" name="h" id="" value="0" size="5"> 
+ = <output name="op4" for="g h">0</output>
+</form>
+<body>
+  <h2>こちらは消費税計算です</h2>
+</body>
+<form   oninput="result.value  =    Math.round(Number(pri.value)   *    Number(tax.value)   /100   +
+Number(pri.value));">
+  <h3 class="zeinuki">税抜き</h3><input type="number" name="pri" id="pri" value="0"size="5"> (円)
+
+✕
+
+ <input type="number" name="tax" id="tax" value="10"size="5"> %(消費税)= <h3 class="zeikomi">税込み</h3>¥
+ <output name="result" for="pri tax">0</output>
+</form>
